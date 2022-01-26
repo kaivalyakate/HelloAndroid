@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kaiwalya Kate</string>
+    <string name="introName">What\'s your Name?</string>
+    <string name="ready">Ready? Press!</string>
+</resources>
