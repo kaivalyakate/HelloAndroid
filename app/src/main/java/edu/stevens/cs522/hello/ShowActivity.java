@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
-public class ShowActivity extends AppCompatActivity {
+public class ShowActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,5 +22,6 @@ public class ShowActivity extends AppCompatActivity {
 
         TextView tv = findViewById(R.id.welcomeTextView);
         tv.setText(message);
+
     }
 }

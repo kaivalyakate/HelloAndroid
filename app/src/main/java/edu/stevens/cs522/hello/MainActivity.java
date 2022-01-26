@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     public static String mainActivityId = "edu.stevens.cs522.hello";
     private EditText editText;
