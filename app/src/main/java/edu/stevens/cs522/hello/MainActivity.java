@@ -32,7 +32,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         EditText edText = findViewById(R.id.editTextTextPersonName);
         String helloText = "Hello "+edText.getText();
         Intent intent = new Intent(this, ShowActivity.class);
-        intent.putExtra(ShowActivity.showActivityId, helloText);
+        intent.putExtra(ShowActivity.MESSAGE_KEY, helloText);
         startActivity(intent);
     }
 

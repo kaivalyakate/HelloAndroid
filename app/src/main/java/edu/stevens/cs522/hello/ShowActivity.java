@@ -12,7 +12,7 @@ import org.w3c.dom.Text;
 
 public class ShowActivity extends Activity {
 
-    public static String showActivityId = "edu.stevens.cs522.hello";
+    public static String MESSAGE_KEY = "edu.stevens.cs522.hello";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class ShowActivity extends Activity {
         setContentView(R.layout.activity_show);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(showActivityId);
+        String message = intent.getStringExtra(MESSAGE_KEY);
 
         TextView tv = findViewById(R.id.welcomeTextView);
         tv.setText(message);
