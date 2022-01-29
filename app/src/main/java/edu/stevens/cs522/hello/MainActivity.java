@@ -15,7 +15,6 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    public static String mainActivityId = "edu.stevens.cs522.hello";
     private EditText editText;
     private Button button;
 
@@ -33,7 +32,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         EditText edText = findViewById(R.id.editTextTextPersonName);
         String helloText = "Hello "+edText.getText();
         Intent intent = new Intent(this, ShowActivity.class);
-        intent.putExtra(mainActivityId, helloText);
+        intent.putExtra(ShowActivity.showActivityId, helloText);
         startActivity(intent);
     }
 

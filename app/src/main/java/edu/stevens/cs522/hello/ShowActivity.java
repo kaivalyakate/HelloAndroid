@@ -12,13 +12,15 @@ import org.w3c.dom.Text;
 
 public class ShowActivity extends Activity {
 
+    public static String showActivityId = "edu.stevens.cs522.hello";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.mainActivityId);
+        String message = intent.getStringExtra(showActivityId);
 
         TextView tv = findViewById(R.id.welcomeTextView);
         tv.setText(message);
